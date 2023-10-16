@@ -1,0 +1,12 @@
+/* Selector Universal */
+
+*{
+    background-color: cyan;
+}
+
+/* Selector de elemento */
+
+h1, mark{
+    color:yellow;
+    background-color: blue;
+}

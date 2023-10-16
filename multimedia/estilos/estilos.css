@@ -1,0 +1,13 @@
+h1 {
+    color: rgb(255, 0, 0);
+    background-color: yellow;
+}
+
+.especial{
+    color: black;
+    background-color: white;
+}
+
+div p{
+    font-weight: bold;
+}
