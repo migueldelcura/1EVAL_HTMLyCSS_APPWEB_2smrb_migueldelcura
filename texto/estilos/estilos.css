@@ -1,3 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Mystery+Quest");
+
+@font-face{
+    font-family: "Mystery";
+    src: url("../fuentesweb/Roboto/Roboto-BlackItalic.ttf");
+}
+
+#especial{
+    font-family:"Mystery", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 500%;
+}
 /* Selector Universal */
 
 *{
@@ -9,4 +20,11 @@
 h1, mark{
     color:yellow;
     background-color: blue;
+}
+ 
+
+
+p#fuendedegoogle {
+    font-family: "Mystery Quest", cursive;
+    font-size: 400%;
 }
