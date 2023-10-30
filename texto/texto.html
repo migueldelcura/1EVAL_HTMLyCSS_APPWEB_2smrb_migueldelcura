@@ -9,6 +9,16 @@
       h1 {
         color: aqua;
       }
+
+      p[class]{
+        background-color: yellow;
+      }
+      p[class="mayusculas"]{
+        text-transform: uppercase;
+      }
+      input{
+        border: green 3px solid;
+      }
     </style>
 
     <title>Ejercicio Texto</title>
@@ -52,4 +62,11 @@ Como hoguera en los bosques el fuego es tu reino.
 </pre>
     <mark> Autor </mark> <small> Pablo Nerura)</small>
   </body>
+
+  <p class="p1">Parrafo 1</p>
+  <p class="p2">Parrafo 2</p>
+  <p class="mayusculas">Párrafo a mayúsculas</p>
+  <form action="procesar.php" method="get">
+     <label> Aprobar <input type="checkbox" name="aprobar" id="aprobar1"> </label>
+  </form>
 </html>

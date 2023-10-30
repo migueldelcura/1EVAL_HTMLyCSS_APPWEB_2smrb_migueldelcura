@@ -3,6 +3,18 @@
   <head>
     <meta charset="utf-8" />
     <title>Listas </title>
+    <style>
+      ul{
+        list-style-type: square;
+      }
+      ol.caritas{
+        list-style-image:url("img/smiley.png");        
+        list-style-position: inside;
+      }
+            li.fondo{
+        background-color: blue;
+      }
+    </style>
   </head>
   <body>
     <h1>Ejercicio de listas</h1>
@@ -15,11 +27,11 @@
       <li>napolitanas</li>
     </ul>
     <h3>Ejercicio de listas ordenadas</h3>
-    <ol>
-      <li>Comprar</li>
-      <li>Preparar alimentos</li>
-      <li>cocinar</li>
-      <li>comer</li>
+    <ol class="caritas">
+      <li class="fondo">Comprar</li>
+      <li class="fondo">Preparar alimentos</li>
+      <li class="fondo">cocinar</li>
+      <li class="fondo">comer</li>
     </ol>
     <h3>Ejercicio de listas de definición</h3>
     <dl>
