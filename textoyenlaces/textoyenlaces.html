@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--<link rel="stylesheet" href="estilos/estilos.css" />-->
+
+    <style>
+      body{
+        background-color: white;
+      }
+      h1 {
+        color: aqua;
+      }
+
+      p[class]{
+        background-color: yellow;
+      }
+      p[class="mayusculas"]{
+        text-transform: uppercase;
+      }
+      input{
+        border: green 3px solid;
+      }
+      input:focus{
+        background-color: aquamarine;
+      }
+      a:link{
+        background-color: yellow;
+        color: green;
+      }
+
+      a:visited{
+        background-color: blue;
+        color: white;
+      }
+      a:hover{
+        background-color: pink;
+      }
+      a:active{
+        background-color: green;
+      }
+
+      q:lang(es){
+        quotes: '"' '"';
+        color: blue;
+        background-color: green;
+      }
+
+      span{
+        color: black;
+      }
+
+      p.especialverde::first-line{
+        background-color:green;
+      }
+      p.especialverde::first-letter{
+        font-size: 20px;
+        color: blue;
+        background-color: pink;
+      }
+
+      p.especialverde::before{
+        content: "Cervantes ";
+        font-weight: bold;
+        text-decoration: underline;
+      }
+      p.especialverde::after{
+        content: " Don Quijote de La Mancha";
+        font-weight: bold;
+        text-decoration: underline;
+      }
+
+    </style>
+
+    <title>Ejercicio Texto</title>
+  </head>
+  <body>
+
+     
+    <!-- Esto es un comentario -->
+    <h1 style="color: chartreuse">Ejercicio de Texto</h1>
+
+    <p class="especialverde">"En un lugar de la Mancha, de cuyo nombre no quiero acordarme, no ha mucho tiempo que vivía un hidalgo de los de lanza en astillero, adarga antigua, rocín flaco y galgo corredor". Ésta es probablemente la frase más conocida de la literatura universal</p>
+
+    <p id="especial">Prueba de la nueva fuente</p>
+
+    <p id="fuendedegoogle">Fuente de Google</p>
+    <mark> Autor </mark> <small> Pablo Nerura)</small>
+    <p class="p1">Parrafo 1</p>
+    <p class="p2">Parrafo 2</p>
+    <p class="mayusculas">Párrafo a mayúsculas</p>
+    <form action="procesar.php" method="get">
+        <fieldset>
+          <legend>Datos personales</legend>
+            <label>Nombre<input type="text" name="nombre" id="nombre1"></label>
+            <label>Apellidos<input type="text" name="apellidos" id="apellidos1"></label>
+        </fieldset>
+       <label> Aprobar <input type="checkbox" name="aprobar" id="aprobar1"> </label>
+    </form>
+    <a href="https://www.mclibre.org/consultar/htmlcss/" target="_blank">Apunes</a>
+
+    <p> Platón (es): <q lang="es"> <span>Solo sé que no se nada</span></q> </p>
+    <p> Platón (en): <q lang="en"> I only know that I know nothing</q> </p>
+
+    <pre>
+      Cuántas veces, <em> amor </em>, te amé sin verte y tal vez sin recuerdo, 
+      sin reconocer tu <strong> mirada </strong>, sin mirarte, centaura,
+      en regiones contrarias, en un mediodía quemante: 
+      eras sólo el aroma de los cereales que amo.
+      Tal vez te vi, te supuse al pasar levantando una copa
+      en Angola, a la luz de la luna de Junio,
+      o eras tú la cintura de aquella guitarra
+      que toqué en las tinieblas y sonó como el mar desmedido.
+      Te amé <s> sin que yo lo supiera </s>, y busqué tu memoria.
+      En las casas vacías entré con linterna a robar tu retrato.
+      Pero yo ya sabía cómo era. De pronto
+      mientras ibas conmigo te toqué y se detuvo mi vida:
+      frente a mis ojos estabas, reinándome, y reinas.
+      Como hoguera en los bosques el fuego es tu reino.
+      </pre>
+
+  </body>
+
+</html>
