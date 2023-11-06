@@ -1,12 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ej. tablas</title>
+    <style>
+        caption{
+            caption-side: bottom;
+            background-color: yellow;
+            color: white;
+            text-align: left;
+            width: fit-content;
+            border-color: red;
+            border-width: 1px;
+            border-style: solid;
+        }
+        table{
+            margin-left: auto;
+            margin-right: auto;
+            border: blue 1px dotted;
+            border-collapse: separate;
+            empty-cells: hide;
+            border-spacing: 15px;
+
+        }
+
+        td{
+            border: red 1px solid;
+        }
+
+        td.especial{
+            border: yellow 1px solid;
+            background-color: green;
+        }
+    </style>
 </head>
 <body>
     <table>
+        <tr></tr><td>2</td>
+        <tr></tr><td>3</td>
+        <tr></tr><td>4</td>
+    </table>
+    <table>
+        <caption>Tabla con estilos</caption>
+        <thead>
+            <tr>
+                <th>Caecera 1</th>
+                <th>Caecera 2</th>
+                <th>Caecera 3</th>
+                <th>Caecera 4</th>
+                <th>Caecera 5</th>
+            </tr>
+        </thead>
         <tr>
             <td>1</td>
             <td>2</td>
@@ -15,18 +60,18 @@
             <td></td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
         </tr>
         <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+            <td class="especial">13</td>
         </tr>
         <tr>
             <td></td>
@@ -57,43 +102,5 @@
             <td></td>
         </tr>
     </table>
-<!-- Code injected by live-server -->
-<script>
-	// <![CDATA[  <-- For SVG support
-	if ('WebSocket' in window) {
-		(function () {
-			function refreshCSS() {
-				var sheets = [].slice.call(document.getElementsByTagName("link"));
-				var head = document.getElementsByTagName("head")[0];
-				for (var i = 0; i < sheets.length; ++i) {
-					var elem = sheets[i];
-					var parent = elem.parentElement || head;
-					parent.removeChild(elem);
-					var rel = elem.rel;
-					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
-						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
-						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
-					}
-					parent.appendChild(elem);
-				}
-			}
-			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
-			var address = protocol + window.location.host + window.location.pathname + '/ws';
-			var socket = new WebSocket(address);
-			socket.onmessage = function (msg) {
-				if (msg.data == 'reload') window.location.reload();
-				else if (msg.data == 'refreshcss') refreshCSS();
-			};
-			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
-				console.log('Live reload enabled.');
-				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
-			}
-		})();
-	}
-	else {
-		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
-	}
-	// ]]>
-</script>
 </body>
 </html>

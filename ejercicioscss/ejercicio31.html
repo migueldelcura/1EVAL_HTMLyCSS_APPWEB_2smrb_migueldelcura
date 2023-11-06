@@ -1,14 +1,41 @@
 <!DOCTYPE html>
 <html lang="es">
 
+<!-- EJERCICIO 3.1 -->
+<!-- Al encabezado..... -->
+
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estilos a tablas</title>
+    <style>
+        thead, tfoot {
+            background-color: brown;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        td:last-child{
+            font-weight: bold;
+        }
+
+        tbody>tr:nth-child(odd){
+            background-color: lightskyblue;
+            color: white;
+        }
+
+        tbody>tr:nth-child(even){
+            background-color: white;
+            color: lightskyblue;
+        }
+
+    </style>
 </head>
 
 <body>
     <table>
+        <caption>Tabla con estilos</caption>
         <thead>
             <tr>
                 <td>Concepto</td>
