@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+    <h1>Ejercicio de formularios</h1>
+    <form action="">
+        <label for="nombre">
+            Nombre: <input type="text" name="nombre" id="nombre" placeholder="Indica tu nombre">
+        </label>
+        <label for="apellidos">
+            Apellidos: <input type="text" name="apellidos" id="apellidos">
+        </label>
+        <label for="frase">
+            Completa la frase: <input type="text" name="frase" id="frase" value="En un lugar de la mancha" size="30">
+        </label>
+        <label for="contrasenia">
+        Contraseña: <input type="password" name="" id="contrasenia"></label>
+        <label for="numfav">
+            Número favorito: <input type="number" name="numfav" id="numfav">
+        </label>
+        <label for="colorFav">
+            Color Favorito: <input type="color" name="colorFav" id="colorFav" value="#2CCE6A">
+        </label>
+        <label for="fechaCumple">
+            Fecha Nacimiento: <input type="date" name="fechaCumple" id="fechaCumple">
+        </label>
+        <label for="HoraEntrada">
+            Hora de entrada: <input type="time" name="HoraEntrada" id="HoraEntrada">
+        </label>
+        <label for="Teletrabajo">
+            Teletrabajo (marcar si estás interesado): <input type="checkbox" name="Teletrabajo" id="Teletrabajo">
+        </label>
+        <p>Intereses</p>
+        <label for="deportes">
+            <input type="checkbox" name="deportes" id="deportes">Deportes
+        </label>
+        <label for="cine">
+            <input type="checkbox" name="cine" id="cine">Cine
+        </label><br>
+        <label>
+            Turno: <br>
+            <input type="radio" name="turno" id="Mañana">Mañana <br>
+            <input type="radio" name="turno" id="Tarde">Tarde <br>
+            <input type="radio" name="turno" id="Partido">Partido
+        </label>
+        <label>
+            <p>Valoración de la empresa (valores 1-10): <input type="range" name="" id="" min="1" max="10" step="1"></p>
+        </label>
+        <label>
+            Nivel de ingles (B1-C2)
+            <input type="range" name="" id="" min="1" max="6" list="nivelingles">
+            <datalist id="nivelingles">
+                <option value="1"></option>
+                <option value="2"></option>
+                <option value="3"></option>
+                <option value="4"></option>
+                <option value="5"></option>
+                <option value="6"></option>
+            </datalist>
+        </label>
+        <label for="">
+            Más información: <textarea name="" id="" rows="5" cols="20"></textarea>
+        </label>
+        <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Borrar">
+    </p>
+    </form>
+</body>
+</html>
