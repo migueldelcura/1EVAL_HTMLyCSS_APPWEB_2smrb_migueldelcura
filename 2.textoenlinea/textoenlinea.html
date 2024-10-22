@@ -6,18 +6,44 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Texto en línea</title>
+    <style>
+        p.parrafo1{
+          line-height:150%;
+          font-size: large;
+          font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        p.parrafo2{
+          line-height: 200%;
+        }
+        h1{
+          font-size: small;
+        }
+        span#especial{
+          font-weight:700;
+        }
+        span.goat{
+          font: oblique large;
+        }
+        span.looser{
+          font-style: italic;
+        }
+    </style>
   </head>
   <body>
+    <h1>Ejercicio de texto</h1>
+    <p class="parrafo1">
     <mark> Viacheslav Konstantínovich von Pleve </mark> (en ruso: Вячесла́в Константи́нович фон
     Пле́ве, romanización Vjačeslav Konstantínovič fon Pleve), a veces también
     Plehve o von Plehwe (Meschovsk, 1846-San Petersburgo, 1904), fue un
     funcionario, político y ministro ruso. Nacido en <time datetime="1986-01-01">1846</time>, ingresó en el
     funcionariado imperial en 1867. En 1881, se lo nombró director del
     Departamento de Policía.
+  </p>
     <!--Dar estilos al span-->
-    <p>
-      Jugadores de <em>fútbol </em><strong>mundial</strong>:
-      <span class="GOAT">Messi</span>, CR7
+    <p class="parrafo2">
+      Jugadores de <em>fútbol </em><span id="especial">mundial    Пле́ве, romanización Vjačeslav Konstantínovič fon Pleve), a veces también
+        Plehve o von Plehwe (Meschovsk, 1846-San Petersburgo, 1904), fue un</span>:
+      <span class="goat">Messi</span>, <span class="looser">CR7</span>
     </p>
   </body>
 </html>

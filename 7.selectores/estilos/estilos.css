@@ -1,0 +1,34 @@
+/* Selector universal*/
+*{
+    background-color: green;
+}
+
+/*Selector de elemento o de etiqueta*/
+
+h1, address{
+    background-color: yellow;
+}
+
+div{
+    border: solid 3px rgb(0, 51, 255);
+}
+
+/*
+Selector de clase
+*/
+p.parrafoazul{
+    background-color: red;
+}
+
+/*Selector de tipo id*/
+p#fondoazul{
+    background-color: blue;
+}
+/*Selector descendiente*/
+div p{
+    color: pink;
+}
+/*Selector hijo*/
+div.div2>p{
+    color: blue;
+}
