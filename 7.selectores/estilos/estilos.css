@@ -32,3 +32,21 @@ div p{
 div.div2>p{
     color: blue;
 }
+
+div.div1{
+    border-top-left-radius: 20px;
+}
+
+div.div2{
+    border-top-color: yellow;
+    border-bottom: red 5px dotted;
+    border-radius: 5px;
+}
+
+div.div3{
+    border: green 3px solid;
+    border-image-source: url("/7.selectores/img/bolagolf.jpeg") ;
+    border-image-repeat: repeat;
+    border-width: 15px;
+    border-image-slice: 50;
+}
