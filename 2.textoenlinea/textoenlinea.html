@@ -7,6 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Texto en línea</title>
     <style>
+        @import url("https://fonts.googleapis.com/css2?family=Eater&family=Nosifer&family=Roboto&display=swap");
+        @font-face {
+          font-family: "Mystery Quest";
+          src: url("fuentesweb/mystery-quest.woff2");
+        }
         mark{
           letter-spacing: 5px;
           text-decoration: underline;
@@ -20,8 +25,17 @@
         p.parrafo2{
           line-height: 200%;
         }
+        @font-face {
+            font-family: "Terror";
+            src: url("fuentesweb/Eater-Regular.ttf");
+          }
+
+          
+       
         h1{
-          font-size: small;
+          font-size:large;
+          font-family: Terror;
+          font-size: 50px;
         }
         span#especial{
           font-weight:700;
@@ -34,17 +48,29 @@
         }
         p.parrafoW{
           text-indent: 25px;
+          font-family: 'Courier New', Courier, monospace;
         }
         span.anio{
           text-decoration:overline;
         }
         p.textotransformado{
           text-transform: capitalize;
+          font-size: 80px;
+          text-shadow: red -8px 8px 3px;
+        }
+        p.loren{
+          font-family: Mystery Quest;
+          font-size: 30px;
+        }
+        h2{
+          font-family: Eater, Nosifer;
+          font-size: 30px;
         }
     </style>
   </head>
   <body>
     <h1>Ejercicio de texto</h1>
+    <h2>Texto con fuente importada</h2>
     <p class="textotransformado">texto en minusculas</p>
     <p class="parrafo1">
     <mark> Viacheslav Konstantínovich von Pleve </mark> (en ruso: Вячесла́в Константи́нович фон
@@ -82,6 +108,6 @@
 
     <p>Es la parte exterior del libro. Suele ser de un material más duro que el de los pliegos; generalmente cartón, plástico o cuero. En la cubierta lleva el título de la obra, su autor, e ilustraciones o diseños para hacerlo identificable y atractivo. A la cubierta frontal se le llama también carátula o tapa anterior y a la cubierta posterior, contracarátula o tapa posterior. Es muy común que se le diga "portada" a la cubierta, lo que genera confusión con la página del libro que lleva este nombre.</p>
 
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quam corporis, nobis, iste, labore sit iusto sunt esse id delectus eaque. Architecto nihil consequuntur sunt quaerat quis. Minima, excepturi repellat.</p>
+    <p class="loren">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi quam corporis, nobis, iste, labore sit iusto sunt esse id delectus eaque. Architecto nihil consequuntur sunt quaerat quis. Minima, excepturi repellat.</p>
   </body>
 </html>
