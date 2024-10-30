@@ -1,145 +1,181 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <style>
-      ol{
+      ol {
         list-style-type: none;
       }
-      ul{
+      ul.caritas {
         list-style-image: url("img/smiley.png");
         list-style-position: inside;
       }
+      ul.menu {
+        list-style-type: none;
+      
+      }
+      li.submenu {
+        float: left;
+        color: white;
+        background-color: red;
+        font-size: 35px;
+        width: 200px;
+        padding: 15px;
+        text-align: center;
+        border: black 5px dotted;
+        margin-right: 10px;
+      }
+      li.submenu:hover{
+        background-color: black;
+      }
     </style>
     <title>Listas</title>
-</head>
-<body>
+  </head>
+  <body>
+    <h3>Menú horizontal con listas y float</h3>
+    <ul class="menu">
+      <li class="submenu">Fútbol</li>
+      <li class="submenu">Baloncesto</li>
+      <li class="submenu">Motor</li>
+      <li class="submenu">Polideportivo</li>
+      <li class="submenu">Coches</li>
+    </ul>
+    <h3>Menú horizontal con listas y display</h3>
+    <ul class="menu">
+      <li class="submenu2">Fútbol2</li>
+      <li class="submenu2">Baloncesto2</li>
+      <li class="submenu2">Motor2</li>
+      <li class="submenu2">Polideportivo2</li>
+      <li class="submenu2">Coches2</li>
+    </ul>
     <h1>Ejercicio de Listas</h1>
     <h2 id="zonalistasordenadas">Listas ordenadas</h2>
     <ol>
-        <li>FCB</li>
-        <li>Real de Madrid</li>
-        <li>Atletico</li>
-        <li>Villarreal</li>
-        <li>Osasuna</li>
-    </ol>
-    <ol >
-        <li>FCB</li>
-        <li>Real de Madrid</li>
-        <li>Atletico</li>
-        <li>Villarreal</li>
-        <li>Osasuna</li>
+      <li>FCB</li>
+      <li>Real de Madrid</li>
+      <li>Atletico</li>
+      <li>Villarreal</li>
+      <li>Osasuna</li>
     </ol>
     <ol>
-        <li>FCB</li>
-        <li>Real de Madrid</li>
-        <li>Atletico</li>
-        <li>Villarreal</li>
-        <li>Osasuna</li>
+      <li>FCB</li>
+      <li>Real de Madrid</li>
+      <li>Atletico</li>
+      <li>Villarreal</li>
+      <li>Osasuna</li>
     </ol>
     <ol>
-        <li>FCB</li>
-        <li>Real de Madrid</li>
-        <li>Atletico</li>
-        <li>Villarreal</li>
-        <li>Osasuna</li>
+      <li>FCB</li>
+      <li>Real de Madrid</li>
+      <li>Atletico</li>
+      <li>Villarreal</li>
+      <li>Osasuna</li>
+    </ol>
+    <ol>
+      <li>FCB</li>
+      <li>Real de Madrid</li>
+      <li>Atletico</li>
+      <li>Villarreal</li>
+      <li>Osasuna</li>
     </ol>
     <h2 id="zonalistasNoordenadas">Listas no ordenadas</h2>
     <ul>
-        <li>3 Peras</li>
-        <li>2 Leche</li>
-        <li>1 Zumo de naranja</li>
-        <li>Papel de WC</li>
-        <li>Sartén</li>
+      <li>3 Peras</li>
+      <li>2 Leche</li>
+      <li>1 Zumo de naranja</li>
+      <li>Papel de WC</li>
+      <li>Sartén</li>
     </ul>
     <ul>
-        <li>3 Peras</li>
-        <li>2 Leche</li>
-        <li>1 Zumo de naranja</li>
-        <li>Papel de WC</li>
-        <li>Sartén</li>
+      <li>3 Peras</li>
+      <li>2 Leche</li>
+      <li>1 Zumo de naranja</li>
+      <li>Papel de WC</li>
+      <li>Sartén</li>
     </ul>
     <ul>
-        <li>3 Peras</li>
-        <li>2 Leche</li>
-        <li>1 Zumo de naranja</li>
-        <li>Papel de WC</li>
-        <li>Sartén</li>
+      <li>3 Peras</li>
+      <li>2 Leche</li>
+      <li>1 Zumo de naranja</li>
+      <li>Papel de WC</li>
+      <li>Sartén</li>
     </ul>
     <ul>
-        <li>3 Peras</li>
-        <li>2 Leche</li>
-        <li>1 Zumo de naranja</li>
-        <li>Papel de WC</li>
-        <li>Sartén</li>
+      <li>3 Peras</li>
+      <li>2 Leche</li>
+      <li>1 Zumo de naranja</li>
+      <li>Papel de WC</li>
+      <li>Sartén</li>
     </ul>
     <h2 id="zonalistasdedefinicion">Listas de definición</h2>
     <dl>
-        <dt>Internet</dt>
-        <dd>Red de redes</dd>
+      <dt>Internet</dt>
+      <dd>Red de redes</dd>
 
-        <dt>Web</dt>
-        <dd>Documentos html enlazados</dd>
+      <dt>Web</dt>
+      <dd>Documentos html enlazados</dd>
     </dl>
     <dl>
-        <dt>Internet</dt>
-        <dd>Red de redes</dd>
+      <dt>Internet</dt>
+      <dd>Red de redes</dd>
 
-        <dt>Web</dt>
-        <dd>Documentos html enlazados</dd>
+      <dt>Web</dt>
+      <dd>Documentos html enlazados</dd>
     </dl>
     <dl>
-        <dt>Internet</dt>
-        <dd>Red de redes</dd>
+      <dt>Internet</dt>
+      <dd>Red de redes</dd>
 
-        <dt>Web</dt>
-        <dd>Documentos html enlazados</dd>
+      <dt>Web</dt>
+      <dd>Documentos html enlazados</dd>
     </dl>
     <dl>
-        <dt>Internet</dt>
-        <dd>Red de redes</dd>
+      <dt>Internet</dt>
+      <dd>Red de redes</dd>
 
-        <dt>Web</dt>
-        <dd>Documentos html enlazados</dd>
+      <dt>Web</dt>
+      <dd>Documentos html enlazados</dd>
     </dl>
     <dl>
-        <dt>Internet</dt>
-        <dd>Red de redes</dd>
+      <dt>Internet</dt>
+      <dd>Red de redes</dd>
 
-        <dt>Web</dt>
-        <dd>Documentos html enlazados</dd>
+      <dt>Web</dt>
+      <dd>Documentos html enlazados</dd>
     </dl>
     <h2 id="zonalistasanidadas">Listas anidadas</h2>
-    <ul>
-        <li>Ítem 1
-          <ol>
-            <li>Ítem 1 de sublista
-              <ul>
-                <li>Ítem 1 de sub-sublista</li>
-                <li>Ítem 2 de sub-sublista</li>
-              </ul>
-            </li>
-            <li>Ítem 2 de sublista
-              <ol>
-                <li>Ítem 1 de sub-sublista</li>
-                <li>Ítem 2 de sub-sublista</li>
-              </ol>
-            </li>
-            <li>Ítem 3 de sublista</li>
-            <li>Ítem 4 de sublista</li>
-          </ol>
-        </li>
-        <li>Ítem 2
-          <ul>
-            <li>Ítem 1 de sublista</li>
-            <li>Ítem 2 de sublista</li>
-          </ul>
-        </li>
-      </ul>
+    <ul class="caritas">
+      <li>
+        Ítem 1
+        <ol>
+          <li>
+            Ítem 1 de sublista
+            <ul>
+              <li>Ítem 1 de sub-sublista</li>
+              <li>Ítem 2 de sub-sublista</li>
+            </ul>
+          </li>
+          <li>
+            Ítem 2 de sublista
+            <ol>
+              <li>Ítem 1 de sub-sublista</li>
+              <li>Ítem 2 de sub-sublista</li>
+            </ol>
+          </li>
+          <li>Ítem 3 de sublista</li>
+          <li>Ítem 4 de sublista</li>
+        </ol>
+      </li>
+      <li>
+        Ítem 2
+        <ul>
+          <li>Ítem 1 de sublista</li>
+          <li>Ítem 2 de sublista</li>
+        </ul>
+      </li>
+    </ul>
     <h3>Otra lista anidada</h3>
-    <ol>
-
-    </ol>
-</body>
+    <ol></ol>
+  </body>
 </html>
