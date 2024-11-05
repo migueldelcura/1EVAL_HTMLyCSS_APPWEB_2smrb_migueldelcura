@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de encuesta</title>
+    <style>
+      div {
+        margin: 0 30%;
+        width: 30%;
+        border: red solid 3px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <!-- Formulario 1-->
+      <h3>Formulario de encuesta</h3>
+      <form
+        action="mailto:miguel.delcura@educa.madrid.org"
+        method="post"
+        enctype="text/plain"
+      >
+        <label
+          ><p>Nombre: <input type="text" name="nombre" id="" /></p
+        ></label>
+        <label
+          ><p>
+            ¿Cual te parece el mejor capítulo?
+            <input type="text" name="mejorcap" id="" /></p
+        ></label>
+        <label
+          ><p>
+            ¿Cual te parece el mejor capítulo?
+            <input type="text" name="mejorcap" id="" /></p
+        ></label>
+        <label
+          ><p>
+            ¿Qué nota le pondrías al curso?
+            <select name="" id="nota">
+              <option value="10">10</option>
+              <option value="9">9</option>
+              <option value="8">8</option>
+              <option value="7">7</option>
+              <option value="6">6</option>
+              <option value="5">5</option>
+              <option value="4">4</option>
+              <option value="3">3</option>
+              <option value="2">2</option>
+              <option value="1">1</option>
+            </select>
+          </p></label
+        >
+
+        <label for="comentarios"><p>Comentarios:</p></label>
+        <p>
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            placeholder="... Comentarios ..."
+          ></textarea>
+        </p>
+
+        <input type="submit" value="Enviar" />
+      </form>
+    </div>
+    <!-- Formulario 2-->
+    <h3>Empleados de una empresa</h3>
+    <form action=""></form>
+  </body>
+</html>
