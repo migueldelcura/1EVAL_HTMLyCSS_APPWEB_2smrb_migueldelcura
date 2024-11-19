@@ -1,0 +1,16 @@
+div {
+  background-color: lightblue;
+  border: 5px solid black;
+  height: 200px;
+  margin: 20px auto;
+  padding: 30px;
+  width: 600px;
+}
+
+.border {
+  box-sizing: border-box;
+}
+
+.padding {
+  box-sizing: padding-box;
+}
